@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative h-screen overflow-hidden flex items-center text-center text-white bg-[url(/images/webp/hero_bg_img.webp)] bg-no-repeat bg-center bg-cover bg-fixed">
+    <section className="relative h-screen overflow-hidden flex items-center text-center text-white pt-[150px] md:pt-[100px]">
       {/* <img
         src="/images/webp/hero_bg_img.webp"
         alt="EDUCORP Hero Background"
@@ -19,7 +19,7 @@ export default function Hero() {
           data-aos-delay="300"
         >
           <h1
-            className="font-poppins text-4xl md:text-5xl lg:text-[54px] mb-8 leading-tight font-extrabold text-shadow-md"
+            className="font-poppins text-3xl sm:text-4xl md:text-5xl lg:text-[54px] mb-8 leading-tight font-bold md:font-extrabold text-shadow-md"
             data-aos="fade-up"
             data-aos-delay="400"
           >

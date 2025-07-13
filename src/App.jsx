@@ -24,9 +24,11 @@ function App() {
 
   return (
     <>
-      <Header />
+      <div className="bg-[url(/images/webp/hero_bg_img.webp)] bg-no-repeat bg-center bg-cover bg-fixed">
+        <Header />
+        <HeroSection />
+      </div>
 
-      <HeroSection />
       <BenefitsSection />
       <AboutSection />
       <ServicesSection />
