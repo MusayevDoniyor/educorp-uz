@@ -5,17 +5,21 @@ export default {
     extend: {
       colors: {
         primary: "#e56a15",
+        secondary: "#ff8c00",
         dark: "#1a1a1a",
         light: "#f8f9fa",
       },
       backgroundImage: {
         "gradient-primary": "linear-gradient(45deg, #e56a15, #ff8c00)",
-        "hero-img": ["./public/images/webp/hero_bg_img.webp"],
+        "hero-img": "url(/images/webp/hero_bg_img.webp)",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
         inter: ["Inter", "sans-serif"],
+      },
+      screens: {
+        md: "800px",
       },
     },
   },

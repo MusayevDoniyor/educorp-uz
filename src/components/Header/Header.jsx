@@ -35,34 +35,48 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between">
           {/* Logo */}
-          <a
-            href="#"
-            className="logo z-50"
-            data-aos="fade-down"
-            data-aos-delay="100"
-          >
+          {/* <img
+            loading="lazy"
+            src="/images/webp/educorp.webp"
+            alt="EDUCORP"
+            className="h-12 md:h-15 lg:h-16 transition-all duration-300 hover:scale-110"
+          /> */}
+          <a href="#" className="flex items-center space-x-2 z-50">
             <img
               loading="lazy"
-              src="/images/webp/educorp.webp"
+              src="/images/webp/educorp-icon.webp"
               alt="EDUCORP"
-              className="h-14 md:h-16 transition-all duration-300 hover:scale-110"
+              className="h-10 sm:h-12 md:h-14 transition-transform duration-300 hover:scale-110"
             />
+            <span className="flex flex-col leading-tight">
+              <span className="font-poppins font-bold text-[28px] sm:text-3xl text-primary tracking-wider">
+                educorp
+              </span>
+
+              <span
+                className={`${
+                  scrolled ? "text-dark" : "text-light"
+                } text-[10px] md:text-[11px]`}
+              >
+                Jamoangizni Rivojlantiring
+              </span>
+            </span>
           </a>
 
           {/* Desktop Navigation */}
           <div
-            className={`hidden md:flex items-center space-x-8 ${
+            className={`hidden md:flex flex-wrap items-center justify-end max-w-full space-x-3 lg:space-x-6 ${
               isMenuActive ? "hidden" : ""
             }`}
             data-aos="fade-down"
             data-aos-delay="200"
           >
-            <ul className="flex space-x-8">
+            <ul className="flex flex-wrap justify-center items-center gap-x-4 gap-y-2">
               {navLinks.map((item) => (
                 <li key={item.href}>
                   <a
                     href={item.href}
-                    className={`hover:text-primary transition-colors duration-300 font-poppins font-medium text-lg ${
+                    className={`hover:text-primary transition-colors duration-300 font-poppins font-medium text-[16px] ${
                       scrolled ? "text-dark" : "text-light"
                     }`}
                     data-aos="fade-right"
@@ -82,9 +96,12 @@ export default function Header() {
             data-aos="fade-left"
             data-aos-delay="200"
           >
-            <a href="tel:+781139858" className="btn btn-primary">
+            <a
+              href="tel:+781139858"
+              className={`btn ${scrolled ? "btn-secondary" : "btn-primary"}`}
+            >
               <FaPhone />
-              <span>ALOQA QILING</span>
+              <span className="hidden md:flex md:text-sm">ALOQA</span>
             </a>
           </div>
 

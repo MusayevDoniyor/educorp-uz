@@ -1,5 +1,6 @@
 import Aos from "aos";
-import BenefitsSection from "./components/BenefitsSection";
+import "aos/dist/aos.css";
+import BenefitsSection from "./components/Benefits/BenefitsSection";
 import Header from "./components/Header/Header";
 import HeroSection from "./components/Hero/HeroSection";
 import AboutSection from "./components/AboutSection";
@@ -24,7 +25,7 @@ function App() {
 
   return (
     <>
-      <div className="bg-[url(/images/webp/hero_bg_img.webp)] bg-no-repeat bg-center bg-cover bg-fixed">
+      <div className="bg-hero-img bg-no-repeat bg-center bg-cover bg-fixed w-full">
         <Header />
         <HeroSection />
       </div>

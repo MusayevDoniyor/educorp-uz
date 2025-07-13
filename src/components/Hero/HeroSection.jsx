@@ -1,55 +1,60 @@
 export default function Hero() {
   return (
-    <section className="relative h-screen overflow-hidden flex items-center text-center text-white pt-[150px] md:pt-[100px]">
-      {/* <img
-        src="/images/webp/hero_bg_img.webp"
-        alt="EDUCORP Hero Background"
-        className="absolute top-0 left-0 w-full h-full object-cover z-[-1] brightness-50"
-        width={1440}
-        height={1080}
-        decoding="async"
-        loading="eager"
-        fetchpriority="high"
-      /> */}
-
-      <div className="container mx-auto px-4">
-        <div
-          className="hero-content max-w-4xl mx-auto"
-          data-aos="zoom-in"
-          data-aos-delay="300"
+    <section className="relative h-screen before:content-[''] before:absolute before:inset-0 before:bg-black/50 flex flex-col justify-center items-start text-left text-white md:pl-16 px-4">
+      <div className="max-w-3xl space-y-6">
+        <h1
+          className="font-poppins font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl drop-shadow-lg"
+          data-aos="fade-up"
+          data-aos-delay="400"
         >
-          <h1
-            className="font-poppins text-3xl sm:text-4xl md:text-5xl lg:text-[54px] mb-8 leading-tight font-bold md:font-extrabold text-shadow-md"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            1 OYDA KOMPANIYANGIZDA{" "}
-            <span className="text-primary">ICHKI AKADEMIYANI</span> YO'LGA
-            QO'YIB BERAMIZ
-          </h1>
+          1 OYDA KOMPANIYANGIZDA{" "}
+          <span className="text-primary">ICHKI AKADEMIYANI</span> YO'LGA QO'YIB
+          BERAMIZ
+        </h1>
 
-          <p
-            className="font-roboto text-xl md:text-2xl mb-10 text-shadow-sm"
-            data-aos="fade-up"
-            data-aos-delay="500"
-          >
-            <span className="text-primary">Smartfon orqali</span> adaptasiya,
-            malaka oshirish, bilimni baholash, rag'batlantirish
-          </p>
+        <p
+          className="
+            font-roboto text-lg sm:text-xl md:text-2xl
+            drop-shadow-md
+          "
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
+          <span className="text-primary">Smartfon orqali</span> adaptasiya,
+          malaka oshirish, bilimni baholash, rag'batlantirish
+        </p>
 
-          <div
-            className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 mt-10"
-            data-aos="fade-up"
-            data-aos-delay="600"
+        <div
+          className="mt-8 flex flex-col sm:flex-row gap-4"
+          data-aos="fade-up"
+          data-aos-delay="600"
+        >
+          <a
+            href="#contact"
+            className="bg-gradient-primary
+              inline-flex items-center justify-center
+              px-6 py-4 rounded-xl
+              font-poppins font-bold text-sm uppercase
+              tracking-wide transition-transform duration-300
+              hover:scale-105 hover:shadow-lg
+            "
           >
-            <a href="#contact" className="btn btn-secondary">
-              Bepul konsultatsiya
-            </a>
+            Bepul konsultatsiya
+          </a>
 
-            <a href="#services" className="btn btn-primary">
-              Xizmatlarimiz
-            </a>
-          </div>
+          <a
+            href="#services"
+            className="
+              btn-primary
+              inline-flex items-center justify-center
+              px-8 py-4 rounded-xl
+              font-poppins font-bold text-sm uppercase
+              tracking-wide transition-transform duration-300
+              hover:scale-105 hover:shadow-lg
+            "
+          >
+            Xizmatlarimiz
+          </a>
         </div>
       </div>
     </section>
