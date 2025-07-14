@@ -65,5 +65,5 @@ section {
 }
 
 .section-title {
-  @apply font-poppins text-3xl md:text-4xl font-bold;
+  @apply font-poppins text-3xl md:text-4xl font-bold mb-5;
 }

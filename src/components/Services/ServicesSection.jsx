@@ -48,7 +48,7 @@ export default function ServicesSection() {
     <section id="services" className="py-24 bg-light">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16" data-aos="fade-up">
-          <h2 className="font-poppins text-3xl md:text-4xl text-dark mb-5 font-bold section-title">
+          <h2 className="text-primary section-title">
             Qanday bosqichlarda xizmat ko'rsatamiz?
           </h2>
         </div>

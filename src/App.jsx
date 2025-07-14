@@ -5,7 +5,7 @@ import Header from "./components/Header/Header";
 import HeroSection from "./components/Hero/HeroSection";
 import AboutSection from "./components/About/AboutSection";
 import ServicesSection from "./components/Services/ServicesSection";
-import TexTaskSection from "./components/TexTaskSection";
+import TexTaskSection from "./components/TexTasks/TexTaskSection";
 import TeamSection from "./components/TeamSection";
 import AccordionSection from "./components/AccordionSection";
 import ClientsSection from "./components/ClientsSection";

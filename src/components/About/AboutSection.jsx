@@ -1,10 +1,10 @@
 export default function About() {
   return (
-    <section id="about" className="py-24">
+    <section id="about" className="py-24 bg-gradient-to-b from-white to-light">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
         <div className="lg:w-1/2" data-aos="fade-right">
           <div>
-            <h2 className="text-primary mb-5 section-title">Maqsadimiz</h2>
+            <h2 className="text-primary section-title">Maqsadimiz</h2>
 
             <p className="font-roboto text-gray-600 mb-8">
               Korporativ ta'limni qulaylashtirish orqali, xodimlar
