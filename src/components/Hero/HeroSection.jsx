@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative h-screen before:content-[''] before:absolute before:inset-0 before:bg-black/50 flex flex-col justify-center items-start text-left text-white md:pl-16 px-4">
+    <section className="relative h-screen before:content-[''] before:absolute before:inset-0 before:bg-black/50 flex flex-col justify-center items-start text-left text-white">
       <div className="max-w-3xl space-y-6">
         <h1
           className="font-poppins font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl drop-shadow-lg"

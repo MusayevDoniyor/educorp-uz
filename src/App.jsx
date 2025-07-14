@@ -3,7 +3,7 @@ import "aos/dist/aos.css";
 import BenefitsSection from "./components/Benefits/BenefitsSection";
 import Header from "./components/Header/Header";
 import HeroSection from "./components/Hero/HeroSection";
-import AboutSection from "./components/AboutSection";
+import AboutSection from "./components/About/AboutSection";
 import ServicesSection from "./components/ServicesSection";
 import TexTaskSection from "./components/TexTaskSection";
 import TeamSection from "./components/TeamSection";
@@ -25,7 +25,7 @@ function App() {
 
   return (
     <>
-      <div className="bg-hero-img bg-no-repeat bg-center bg-cover bg-fixed w-full">
+      <div className="bg-hero-img bg-no-repeat bg-center bg-cover bg-fixed w-full relative">
         <Header />
         <HeroSection />
       </div>

@@ -26,8 +26,12 @@ body {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  overflow: hidden;
-  padding: 0 15px;
+  padding: 15px;
+}
+
+section {
+  position: relative;
+  padding: 50px 20px;
 }
 
 ::selection {
@@ -58,4 +62,8 @@ body {
 
 .btn-secondary {
   @apply bg-gradient-primary text-white tracking-wider hover:bg-light hover:border-primary hover:border-2;
+}
+
+.section-title {
+  @apply font-poppins text-3xl md:text-4xl font-bold;
 }

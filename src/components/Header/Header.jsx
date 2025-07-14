@@ -28,11 +28,11 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? "header-blur py-2" : "bg-transparent py-4"
+      className={`fixed w-full z-50 transition-all duration-300 px-2.5 ${
+        scrolled ? "header-blur py-0.5" : "bg-transparent py-4"
       }`}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto">
         <nav className="flex items-center justify-between">
           {/* Logo */}
           {/* <img
