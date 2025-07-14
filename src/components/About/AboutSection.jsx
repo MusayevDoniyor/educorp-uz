@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about" className="py-24 bg-gradient-to-b from-white to-light">
+    <section id="about" className="py-24">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center gap-12">
         <div className="lg:w-1/2" data-aos="fade-right">
           <div>

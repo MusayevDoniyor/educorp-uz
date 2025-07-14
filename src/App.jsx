@@ -4,7 +4,7 @@ import BenefitsSection from "./components/Benefits/BenefitsSection";
 import Header from "./components/Header/Header";
 import HeroSection from "./components/Hero/HeroSection";
 import AboutSection from "./components/About/AboutSection";
-import ServicesSection from "./components/ServicesSection";
+import ServicesSection from "./components/Services/ServicesSection";
 import TexTaskSection from "./components/TexTaskSection";
 import TeamSection from "./components/TeamSection";
 import AccordionSection from "./components/AccordionSection";

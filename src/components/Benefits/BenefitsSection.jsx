@@ -62,7 +62,7 @@ export default function Benefits() {
   ];
 
   return (
-    <section className=" bg-gray-50">
+    <section className="bg-light">
       <div className="container px-4">
         <div className="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
           <h2 className="section-title">
