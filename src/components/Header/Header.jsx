@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { FaBars, FaPhone } from "react-icons/fa";
-import { FaX } from "react-icons/fa6";
 import SidebarMenu from "./SidebarMenu";
 
 export default function Header() {
@@ -59,24 +58,28 @@ export default function Header() {
               data-aos-delay="200"
             >
               <ul className="flex flex-wrap space-x-4 md:space-x-7 lg:space-x-14">
-                {["#home", "#services", "#about", "#team", "#contact"].map(
-                  (href, i) => (
-                    <li key={href}>
-                      <a
-                        href={href}
-                        className={`font-poppins font-medium md:text-lg transition-colors duration-300 ${
-                          scrolled
-                            ? "text-dark hover:text-primary"
-                            : "text-light hover:text-primary"
-                        }`}
-                        data-aos="fade-right"
-                        data-aos-delay={300 + i * 100}
-                      >
-                        {href.slice(1).charAt(0).toUpperCase() + href.slice(2)}
-                      </a>
-                    </li>
-                  )
-                )}
+                {[
+                  { text: "bosh sahifa", url: "home" },
+                  { text: "xizmatlar", url: "services" },
+                  { text: "biz haqimizda", url: "about" },
+                  { text: "jamoa", url: "team" },
+                  { text: "bog'lanish", url: "contact" },
+                ].map((link, i) => (
+                  <li key={link.url}>
+                    <a
+                      href={link.url}
+                      className={`font-poppins font-medium md:text-lg transition-colors duration-300 ${
+                        scrolled
+                          ? "text-dark hover:text-primary"
+                          : "text-light hover:text-primary"
+                      }`}
+                      data-aos="fade-right"
+                      data-aos-delay={300 + i * 100}
+                    >
+                      {link.text.charAt(0).toUpperCase() + link.text.slice(1)}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
 

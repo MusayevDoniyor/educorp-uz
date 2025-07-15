@@ -18,9 +18,8 @@ import BackToTopBtn from "./components/BackToTopBtn";
 function App() {
   Aos.init({
     duration: 800,
-    easing: "ease-in-out",
+    easing: "ease",
     once: true,
-    offset: 100,
   });
 
   return (

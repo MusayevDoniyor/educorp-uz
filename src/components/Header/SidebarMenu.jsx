@@ -3,7 +3,13 @@ import { FaPhone } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
 import { motion, AnimatePresence } from "framer-motion";
 
-const navLinks = ["home", "services", "about", "team", "contact"];
+const navLinks = [
+  { text: "bosh sahifa", url: "home" },
+  { text: "xizmatlar", url: "services" },
+  { text: "biz haqimizda", url: "about" },
+  { text: "jamoa", url: "team" },
+  { text: "bog'lanish", url: "contact" },
+];
 
 export default function SidebarMenu({ isOpen, onClose }) {
   // Disable background scroll
@@ -54,13 +60,13 @@ export default function SidebarMenu({ isOpen, onClose }) {
             {/* Navigation */}
             <ul className="flex flex-col items-start gap-6">
               {navLinks.map((link) => (
-                <li key={link}>
+                <li key={link.url}>
                   <a
-                    href={`#${link}`}
+                    href={`#${link.url}`}
                     className="text-lg font-medium text-gray-800 hover:text-primary transition-colors"
                     onClick={onClose}
                   >
-                    {link.charAt(0).toUpperCase() + link.slice(1)}
+                    {link.text.charAt(0).toUpperCase() + link.text.slice(1)}
                   </a>
                 </li>
               ))}
