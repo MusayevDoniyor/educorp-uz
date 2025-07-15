@@ -15,11 +15,11 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed w-full z-50 transition-all duration-300 ${
+        className={`fixed w-full z-50 transition-all duration-300 mx-auto container ${
           scrolled ? "header-blur py-0.5" : "bg-transparent py-4"
         }`}
       >
-        <div className="container mx-auto px-4">
+        <div className="mx-auto px-4">
           <nav className="flex items-center justify-between">
             {/* Logo with AOS animation */}
             <a
@@ -67,7 +67,7 @@ export default function Header() {
                 ].map((link, i) => (
                   <li key={link.url}>
                     <a
-                      href={link.url}
+                      href={`#${link.url}`}
                       className={`font-poppins font-medium md:text-lg transition-colors duration-300 ${
                         scrolled
                           ? "text-dark hover:text-primary"

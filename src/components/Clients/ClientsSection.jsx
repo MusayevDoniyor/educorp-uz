@@ -72,7 +72,7 @@ export default function ClientsSection() {
         </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         .animate-scroll {
           animation: scroll 30s linear infinite;
           display: flex;

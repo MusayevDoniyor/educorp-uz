@@ -11,7 +11,7 @@ import AccordionSection from "./components/Accordion/AccordionSection";
 import ClientsSection from "./components/Clients/ClientsSection";
 import TargetCompaniesSection from "./components/TargetCompanies/TargetCompaniesSection";
 import CTASection from "./components/CTA/CTASection";
-import ContactSection from "./components/ContactSection";
+import ContactSection from "./components/Contact/ContactSection";
 import Footer from "./components/Footer";
 import BackToTopBtn from "./components/BackToTopBtn";
 
@@ -24,7 +24,7 @@ function App() {
 
   return (
     <>
-      <div className="bg-hero-img bg-no-repeat bg-center bg-cover bg-fixed w-full relative">
+      <div className="bg-hero-img bg-no-repeat bg-center bg-cover bg-fixed w-full max-w relative mx-auto">
         <Header />
         <HeroSection />
       </div>
@@ -37,7 +37,6 @@ function App() {
       <AccordionSection />
       <ClientsSection />
       <TargetCompaniesSection />
-      <CTASection />
       <ContactSection />
 
       <Footer />
