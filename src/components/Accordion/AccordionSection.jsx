@@ -100,7 +100,7 @@ export default function AccordionSection() {
   return (
     <section className="educorp-accordion py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16" data-aos="fade-up">
           <h2 className="text-primary section-title">NIMA UCHUN EDUCORP?</h2>
 
           <h3 className="text-2xl md:text-[28px] font-bold text-gray-700">

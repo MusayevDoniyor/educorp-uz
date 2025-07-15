@@ -8,7 +8,7 @@ import ServicesSection from "./components/Services/ServicesSection";
 import TexTaskSection from "./components/TexTasks/TexTaskSection";
 import TeamSection from "./components/Team/TeamSection";
 import AccordionSection from "./components/Accordion/AccordionSection";
-import ClientsSection from "./components/ClientsSection";
+import ClientsSection from "./components/Clients/ClientsSection";
 import TargetCompaniesSection from "./components/TargetCompaniesSection";
 import CTASection from "./components/CTASection";
 import ContactSection from "./components/ContactSection";
