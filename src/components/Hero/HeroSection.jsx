@@ -8,7 +8,7 @@ export default function Hero() {
         <h1
           className="font-poppins font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl drop-shadow-lg"
           data-aos="fade-up"
-          data-aos-delay="400"
+          data-aos-delay="200"
         >
           1 OYDA KOMPANIYANGIZDA{" "}
           <span className="text-primary">ICHKI AKADEMIYANI</span> YO'LGA QO'YIB
@@ -21,7 +21,7 @@ export default function Hero() {
             drop-shadow-md
           "
           data-aos="fade-up"
-          data-aos-delay="500"
+          data-aos-delay="200"
         >
           <span className="text-primary">Smartfon orqali</span> adaptasiya,
           malaka oshirish, bilimni baholash, rag'batlantirish
@@ -30,7 +30,7 @@ export default function Hero() {
         <div
           className="mt-8 flex flex-col sm:flex-row gap-4"
           data-aos="fade-up"
-          data-aos-delay="600"
+          data-aos-delay="300"
         >
           <a
             href="#contact"
