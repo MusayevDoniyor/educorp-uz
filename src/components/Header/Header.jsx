@@ -22,7 +22,7 @@ export default function Header() {
         <div className="mx-auto px-4">
           <nav className="flex items-center justify-between">
             {/* Logo with AOS animation */}
-            <a href="#" className="flex items-center space-x-2 z-50">
+            <a href="#" className="flex items-center space-x-2 z-50 mr-8">
               <img
                 loading="lazy"
                 src="/images/webp/educorp-icon.webp"
@@ -47,11 +47,11 @@ export default function Header() {
 
             {/* Desktop menu */}
             <div
-              className={`hidden md:flex items-center space-x-6 ${
+              className={`hidden md:flex items-center z-50 md:max-w-4xl ${
                 isMenuActive ? "hidden" : ""
               }`}
             >
-              <ul className="flex flex-wrap space-x-4 md:space-x-7 lg:space-x-14">
+              <ul className="flex flex-wrap justify-center space-x-6 lg:space-x-14">
                 {[
                   { text: "bosh sahifa", url: "home" },
                   { text: "xizmatlar", url: "services" },
