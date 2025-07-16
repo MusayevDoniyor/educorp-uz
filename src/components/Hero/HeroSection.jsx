@@ -2,14 +2,10 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative h-screen before:content-[''] before:absolute before:inset-0 before:bg-black/50 flex flex-col justify-center items-start text-left text-white"
+      className="relative h-screen bg-black/50 flex flex-col justify-center items-start text-left text-white"
     >
       <div className="max-w-3xl space-y-6">
-        <h1
-          className="font-poppins font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl drop-shadow-lg"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
+        <h1 className="font-poppins font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl drop-shadow-lg">
           1 OYDA KOMPANIYANGIZDA{" "}
           <span className="text-primary">ICHKI AKADEMIYANI</span> YO'LGA QO'YIB
           BERAMIZ
@@ -20,18 +16,12 @@ export default function Hero() {
             font-roboto text-lg sm:text-xl md:text-2xl
             drop-shadow-md
           "
-          data-aos="fade-up"
-          data-aos-delay="200"
         >
           <span className="text-primary">Smartfon orqali</span> adaptasiya,
           malaka oshirish, bilimni baholash, rag'batlantirish
         </p>
 
-        <div
-          className="mt-8 flex flex-col sm:flex-row gap-4"
-          data-aos="fade-up"
-          data-aos-delay="300"
-        >
+        <div className="mt-8 flex flex-col sm:flex-row gap-4">
           <a
             href="#contact"
             className="bg-gradient-primary

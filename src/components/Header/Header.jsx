@@ -22,18 +22,14 @@ export default function Header() {
         <div className="mx-auto px-4">
           <nav className="flex items-center justify-between">
             {/* Logo with AOS animation */}
-            <a
-              href="#"
-              className="flex items-center space-x-2 z-50"
-              data-aos="fade-down"
-              data-aos-delay="100"
-            >
+            <a href="#" className="flex items-center space-x-2 z-50">
               <img
                 loading="lazy"
                 src="/images/webp/educorp-icon.webp"
                 alt="EDUCORP"
                 className="h-10 sm:h-12 md:h-[53px] transition-transform duration-300 hover:scale-110"
               />
+
               <span className="flex flex-col leading-tight">
                 <span className="font-poppins font-bold text-[28px] sm:text-3xl text-primary tracking-wider">
                   educorp
@@ -54,8 +50,6 @@ export default function Header() {
               className={`hidden md:flex items-center space-x-6 ${
                 isMenuActive ? "hidden" : ""
               }`}
-              data-aos="fade-down"
-              data-aos-delay="200"
             >
               <ul className="flex flex-wrap space-x-4 md:space-x-7 lg:space-x-14">
                 {[
@@ -73,8 +67,6 @@ export default function Header() {
                           ? "text-dark hover:text-primary"
                           : "text-light hover:text-primary"
                       }`}
-                      data-aos="fade-right"
-                      data-aos-delay={300 + i * 100}
                     >
                       {link.text.charAt(0).toUpperCase() + link.text.slice(1)}
                     </a>
@@ -84,11 +76,7 @@ export default function Header() {
             </div>
 
             {/* CTA */}
-            <div
-              className="hidden md:block"
-              data-aos="fade-left"
-              data-aos-delay="200"
-            >
+            <div className="hidden md:block">
               <a
                 href="tel:+781139858"
                 className={`btn ${scrolled ? "btn-secondary" : "btn-primary"}`}
@@ -101,8 +89,6 @@ export default function Header() {
             {/* Mobile toggle */}
             <button
               className="md:hidden z-50 p-2 text-primary focus:outline-none"
-              data-aos="fade-left"
-              data-aos-delay="300"
               onClick={() => setIsMenuActive(!isMenuActive)}
               aria-label="Toggle menu"
             >

@@ -18,7 +18,7 @@ import BackToTopBtn from "./components/BackToTop/BackToTopBtn";
 function App() {
   useEffect(() => {
     Aos.init({
-      duration: 600,
+      duration: 800,
       easing: "ease",
       once: true,
     });
@@ -27,20 +27,9 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Hero Section with Header */}
-      <div className="relative h-screen flex items-start justify-start text-white overflow-hidden">
-        <img
-          src="/images/webp/hero_bg_img.webp"
-          alt="Hero background"
-          className="absolute inset-0 w-full h-full object-cover object-center z-0"
-          fetchPriority="high"
-        />
-        <div className="absolute inset-0 bg-black/30 z-10" />
-
-        {/* Header va Hero matn */}
-        <div className="relative z-20 w-full">
-          <Header />
-          {/* <HeroSection /> */}
-        </div>
+      <div className="bg-hero-img bg-no-repeat bg-center bg-cover bg-fixed w-full relative">
+        <Header />
+        <HeroSection />
       </div>
 
       {/* Main Content */}
