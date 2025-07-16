@@ -111,7 +111,10 @@ export default function ContactCTASection() {
         </div>
 
         {/* Contact Section */}
-        <div className="bg-white rounded-xl md:rounded-2xl shadow-lg overflow-hidden max-w-6xl mx-auto">
+        <div
+          className="bg-white rounded-xl md:rounded-2xl shadow-lg overflow-hidden max-w-6xl mx-auto"
+          data-aos="zoom-in"
+        >
           {submitted ? (
             <div className="p-10 text-center">
               <FaCheckCircle className="text-5xl text-green-500 mx-auto mb-4" />
