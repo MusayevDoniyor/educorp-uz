@@ -31,6 +31,24 @@ export default function Footer() {
     },
   ];
 
+  const socialLinks = [
+    {
+      icon: <FaTelegram className="text-xl" />,
+      label: "Telegram",
+      href: "#",
+    },
+    {
+      icon: <FaFacebookF className="text-xl" />,
+      label: "Facebook",
+      href: "#",
+    },
+    {
+      icon: <FaInstagram className="text-xl" />,
+      label: "Instagram",
+      href: "#",
+    },
+  ];
+
   return (
     <footer className="p-[15px] bg-gradient-to-b from-dark to-[#2c3e50] text-white pt-20 pb-10">
       <div className="container mx-auto px-4">
@@ -43,36 +61,27 @@ export default function Footer() {
                 alt="EDUCORP ICON"
                 className="h-10"
               />
-
               <h3 className="font-poppins text-2xl font-bold">EDUCORP</h3>
             </div>
 
-            <p className="font-roboto  mb-6">
+            <p className="font-roboto mb-6">
               Kompaniyalarga korporativ ta'lim yechimlarini taqdim etuvchi
               yetakchi provayder
             </p>
 
             <div className="flex gap-4">
-              <a
-                href="#"
-                className="bg-gradient-primary text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary-dark transition-colors"
-              >
-                <FaTelegram className="text-xl" />
-              </a>
-
-              <a
-                href="#"
-                className="bg-gradient-primary text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary-dark transition-colors"
-              >
-                <FaFacebookF className="text-xl" />
-              </a>
-
-              <a
-                href="#"
-                className="bg-gradient-primary text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary-dark transition-colors"
-              >
-                <FaInstagram className="text-xl" />
-              </a>
+              {socialLinks.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.href}
+                  className="bg-gradient-primary text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary-dark transition-colors"
+                  aria-label={`${social.label} sahifasiga o'tish`}
+                  title={social.label}
+                >
+                  {social.icon}
+                  <span className="sr-only">{social.label}</span>
+                </a>
+              ))}
             </div>
           </div>
 
@@ -89,6 +98,7 @@ export default function Footer() {
                     <a
                       href={item.href}
                       className="font-roboto text-[#bbb] hover:text-white transition-colors duration-300 flex items-center gap-2 w-fit"
+                      aria-label={item.text}
                     >
                       {item.text}
                     </a>
