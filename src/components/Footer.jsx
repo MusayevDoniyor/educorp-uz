@@ -1,117 +1,103 @@
 import { FaFacebookF, FaInstagram, FaTelegram } from "react-icons/fa6";
 
 export default function Footer() {
-  return (
-    <footer>
-      <div className="container">
-        <div className="footer-container">
-          <div className="footer-col" data-aos="fade-up" data-aos-delay="100">
-            <h3>
-              <img
-                src="./images/webp/educorp-icon.webp"
-                alt="EDUCORP ICON"
-                className="footer-icon"
-                width="40"
-                height="40"
-              />
-              EDUCORP
-            </h3>
+  const footerLinks = [
+    {
+      title: "Xizmatlar",
+      items: [
+        { text: "Ichki akademiya", href: "#" },
+        { text: "Korporativ kurslar", href: "#" },
+        { text: "LMS platformasi", href: "#" },
+        { text: "Metodik yordam", href: "#" },
+      ],
+    },
+    {
+      title: "Kompaniya",
+      items: [
+        { text: "Biz haqimizda", href: "#" },
+        { text: "Jamoa", href: "#" },
+        { text: "Mijozlar", href: "#" },
+        { text: "Karyera", href: "#" },
+      ],
+    },
+    {
+      title: "Yordam",
+      items: [
+        { text: "FAQ", href: "#" },
+        { text: "Qo'llanma", href: "#" },
+        { text: "Shartnoma", href: "#" },
+        { text: "Maxfiylik", href: "#" },
+      ],
+    },
+  ];
 
-            <p>
+  return (
+    <footer className="p-[15px] bg-gradient-to-b from-dark to-[#2c3e50] text-white pt-20 pb-10">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+          {/* Logo and Info */}
+          <div>
+            <div className="flex items-center gap-2 mb-6">
+              <img
+                src="/images/webp/educorp-icon.webp"
+                alt="EDUCORP ICON"
+                className="h-10"
+              />
+              <h3 className="font-poppins text-2xl font-bold">EDUCORP</h3>
+            </div>
+            <p className="font-roboto  mb-6">
               Kompaniyalarga korporativ ta'lim yechimlarini taqdim etuvchi
               yetakchi provayder
             </p>
-
-            <div className="social-links">
-              <a href="#">
-                <i className="fab fa-telegram">
-                  <FaTelegram />
-                </i>
+            <div className="flex gap-4">
+              <a
+                href="#"
+                className="bg-gradient-primary text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary-dark transition-colors"
+              >
+                <FaTelegram className="text-xl" />
               </a>
-
-              <a href="#">
-                <i className="fab fa-facebook-f">
-                  <FaFacebookF />
-                </i>
+              <a
+                href="#"
+                className="bg-gradient-primary text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary-dark transition-colors"
+              >
+                <FaFacebookF className="text-xl" />
               </a>
-
-              <a href="#">
-                <i className="fab fa-instagram">
-                  <FaInstagram />
-                </i>
+              <a
+                href="#"
+                className="bg-gradient-primary text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary-dark transition-colors"
+              >
+                <FaInstagram className="text-xl" />
               </a>
             </div>
           </div>
 
-          <div className="footer-col" data-aos="fade-up" data-aos-delay="200">
-            <h3>Xizmatlar</h3>
+          {/* Footer Links */}
+          {footerLinks.map((section, index) => (
+            <div key={index}>
+              <h3 className="font-poppins text-xl font-bold mb-6 relative pb-3 after:absolute after:left-0 after:bottom-0 after:w-16 after:h-1 after:bg-gradient-primary">
+                {section.title}
+              </h3>
 
-            <ul>
-              <li>
-                <a href="#">Ichki akademiya</a>
-              </li>
-
-              <li>
-                <a href="#">Korporativ kurslar</a>
-              </li>
-
-              <li>
-                <a href="#">LMS platformasi</a>
-              </li>
-
-              <li>
-                <a href="#">Metodik yordam</a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="footer-col" data-aos="fade-up" data-aos-delay="300">
-            <h3>Kompaniya</h3>
-
-            <ul>
-              <li>
-                <a href="#">Biz haqimizda</a>
-              </li>
-
-              <li>
-                <a href="#">Jamoa</a>
-              </li>
-
-              <li>
-                <a href="#">Mijozlar</a>
-              </li>
-
-              <li>
-                <a href="#">Karyera</a>
-              </li>
-            </ul>
-          </div>
-
-          <div className="footer-col" data-aos="fade-up" data-aos-delay="400">
-            <h3>Yordam</h3>
-
-            <ul>
-              <li>
-                <a href="#">FAQ</a>
-              </li>
-
-              <li>
-                <a href="#">Qo'llanma</a>
-              </li>
-
-              <li>
-                <a href="#">Shartnoma</a>
-              </li>
-
-              <li>
-                <a href="#">Maxfiylik</a>
-              </li>
-            </ul>
-          </div>
+              <ul className="space-y-3">
+                {section.items.map((item, i) => (
+                  <li key={i}>
+                    <a
+                      href={item.href}
+                      className="font-roboto text-[#bbb] hover:text-white transition-colors duration-300 flex items-center gap-2 w-fit"
+                    >
+                      {item.text}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
-        <div className="footer-bottom" data-aos-delay="500">
-          <p>© 2025 EDUCORP. Barcha huquqlar himoyalangan</p>
+        <div className="pt-6 border-t border-gray-800 text-center">
+          <p className="font-roboto text-gray-400">
+            © {new Date().getFullYear()} EDUCORP. Barcha huquqlar himoyalangan
+          </p>
         </div>
       </div>
     </footer>
