@@ -18,7 +18,7 @@ import BackToTopBtn from "./components/BackToTop/BackToTopBtn";
 function App() {
   useEffect(() => {
     Aos.init({
-      duration: 800,
+      duration: 600,
       easing: "ease",
       once: true,
     });
@@ -39,7 +39,7 @@ function App() {
         {/* Header va Hero matn */}
         <div className="relative z-20 w-full">
           <Header />
-          <HeroSection />
+          {/* <HeroSection /> */}
         </div>
       </div>
 
